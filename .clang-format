@@ -1,0 +1,55 @@
+# Based on LLVM style, customized for a C++ ray tracing project
+BasedOnStyle: LLVM
+
+# Language standard (C++20 for modern features like std::array, noexcept)
+Language: Cpp
+Standard: c++20
+
+# Line length limit of 120 characters as requested
+ColumnLimit: 120
+
+# Use 4 spaces for indentation (clear for nested math operations)
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# Place braces on new lines for functions/classes (Allman style, clear for vec3 methods)
+BreakBeforeBraces: Allman
+
+# Allow short functions (e.g., vec3 getters) on a single line
+AllowShortFunctionsOnASingleLine: Inline
+
+# Align consecutive declarations (e.g., vec3 members) for readability
+AlignConsecutiveDeclarations: true
+AlignConsecutiveAssignments: true
+
+# Space around operators (e.g., a + b) for clear math expressions
+SpaceBeforeAssignmentOperators: true
+SpaceAfterCStyleCast: true
+
+# Control line breaks in math-heavy expressions
+PenaltyBreakBeforeFirstCallParameter: 10
+PenaltyBreakAssignment: 20
+
+# Pointer/reference alignment (right-aligned for clarity in vec3 parameters)
+PointerAlignment: Right
+
+# No extra spaces inside parentheses (clean for vec3(e0, e1, e2))
+SpaceBeforeParens: Never
+SpaceInEmptyParentheses: false
+
+# Keep noexcept and const qualifiers compact
+SpaceAfterControlStatementKeyword: true
+SpaceBeforeCpp11BracedList: false
+
+# Format comments to wrap at 120 characters
+ReflowComments: true
+MaxEmptyLinesToKeep: 1
+
+# Sort includes (e.g., <array>, <cmath>) for consistency
+SortIncludes: true
+IncludeCategories:
+  - Regex: '^<.*\.h(pp)?>'
+    Priority: 1
+  - Regex: '^".*\.h(pp)?"'
+    Priority: 2
