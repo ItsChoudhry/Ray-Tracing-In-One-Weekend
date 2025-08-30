@@ -32,7 +32,7 @@ PenaltyBreakBeforeFirstCallParameter: 10
 PenaltyBreakAssignment: 20
 
 # Pointer/reference alignment (right-aligned for clarity in vec3 parameters)
-PointerAlignment: Right
+PointerAlignment: Left
 
 # No extra spaces inside parentheses (clean for vec3(e0, e1, e2))
 SpaceBeforeParens: Never
