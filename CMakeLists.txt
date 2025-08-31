@@ -9,7 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add executable or library
-add_executable(${PROJECT_NAME} main.cpp vec3.h)
+add_executable(${PROJECT_NAME} main.cpp vec3.h color.h ray.h)
 
 # Optionally, specify include directories
 # target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/include)
